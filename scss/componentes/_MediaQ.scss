@@ -1,0 +1,28 @@
+/*desktop*/
+@media (min-width:1024px) {
+    body{
+        background-color: #A52F2A;}     
+}
+
+/*tablet*/
+@media (min-width:481px) and (max-width:1023px){
+    body{
+        background-color: #A52F2A;}
+    .padre-flex{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            justify-content: space-evenly; 
+        }
+}
+/*smartphone*/
+@media(max-width:480px){
+    body{
+        background-color:#A52F2A;}
+    .padre-flex{
+         display: flex;
+         flex-direction: row;
+         justify-content: center;
+        justify-content: space-evenly; 
+        }
+}

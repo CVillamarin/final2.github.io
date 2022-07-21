@@ -1,0 +1,25 @@
+*{
+    font-family: 'Times New Roman', Times, serif;
+}
+body{
+    width: 100%;
+    padding-right: var(--bs-gutter-x, 0.75rem);
+    padding-left: var(--bs-gutter-x, 0.75rem);
+    margin-right: auto;
+    margin-left: auto; 
+    
+}
+@mixin font($font){ 
+    font-size: $font;
+}
+
+$colores:(
+    rojo:#A52F2A,
+    blanco:cornsilk,
+);
+
+@import "../scss/componentes/main";
+@import "../scss/componentes/header";
+@import "../scss/componentes/MediaQ";
+@import "../scss/componentes/footer";
+

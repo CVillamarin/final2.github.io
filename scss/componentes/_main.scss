@@ -1,0 +1,62 @@
+main{
+    background-color: cornsilk;
+    padding: 0%;
+    margin: 0%;
+    div{
+        .border{
+            border-style:solid;
+        }
+        div{
+            p{
+                .subrayado{
+                  text-decoration: underline;
+                 }
+             }
+            .border{
+                border-style:solid;
+            }
+            .row {
+                --bs-gutter-x: 1.5rem;
+                --bs-gutter-y: 0;
+                display: flex;
+                flex-wrap: wrap;
+                margin-top: calc(-1 * var(--bs-gutter-y));
+                margin-right: calc(-0.5 * var(--bs-gutter-x));
+                margin-left: calc(-0.5 * var(--bs-gutter-x));
+              }      
+            .parrafo{
+                @include font(medium);
+                line-height: 1.4;
+                border-style: solid;
+                padding: 5%;
+            }
+            .col {
+                flex: 1 0 0%;
+              }
+        }
+    }
+    .padding{
+        padding: 7%;
+       border: solid;
+    }
+    .articulo{
+        font-size: 100%;
+        font-weight: bold;
+        text-decoration: underline;
+        margin-left: 2%;
+    }
+    .chica{
+        font-size: small;
+        font-weight: 900;
+        margin: 2%;
+    }
+     .subtitulo{
+        @extend .subparrafo;
+         @include font(120%);
+         font-weight: bold;
+                }
+     .subparrafo{
+          margin-left: 2%;
+          }
+     
+}
